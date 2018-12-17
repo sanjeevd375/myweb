@@ -1,0 +1,43 @@
+
+{% load staticfiles %}
+<html>
+<head>
+<title>marlabs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{% load staticfiles %}
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+	
+  background: "{% static '/static/images/1.jpg' %}" ;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.center {
+ font-style: oblique;
+ color: #00cccc;
+}
+}
+</style>
+</head>
+<body class="bgimg">
+​
+<div>
+{% load staticfiles %}
+ <div>
+  <h1 class="center" style="font-size:4vw;">Welcome to Marlabs!</h1>
+  <h3>Digital Transformation at work</h3>
+ </div>
+ <div>
+  <p class="w3-large w3-center">Marlabs helps businesses with practical, ground up, hands-on practical solutions that help </br> them challenge the old paradigms of high costs, inefficiencies, slow time to market among others.</p>
+ </div>
+<a href="{% static '/static/pdf/ReactQuickly.pdf' %}" download >
+<img src="{% static '/static/images/re.jpeg' %}" alt="ReactQuickly" width="104" height="142" >
+</a>
+</div>
+​
+</body>
+</html>
